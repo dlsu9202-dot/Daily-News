@@ -1,0 +1,61 @@
+# ====== 翻译设置 ======
+translate:
+  target_lang: "zh-CN"
+
+# ====== 新闻源（你要的全部在这里）======
+sources:
+  # 国内中文
+  - name: "人民网"
+    url: "http://www.people.com.cn/rss/politics.xml"
+    lang: "zh"
+  - name: "新华网"
+    url: "http://www.xinhuanet.com/politics/news_politics.xml"
+    lang: "zh"
+  - name: "中国新闻网"
+    url: "https://www.chinanews.com.cn/rss/china.xml"
+    lang: "zh"
+  - name: "中国经济网"
+    url: "http://www.ce.cn/xwzx/gnsz/gdxw/rss.xml"
+    lang: "zh"
+
+  # 国际英文
+  - name: "BBC News"
+    url: "http://feeds.bbci.co.uk/news/rss.xml"
+    lang: "en"
+  - name: "The New York Times"
+    url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+    lang: "en"
+  - name: "Reuters"
+    url: "https://rsshub.app/reuters/topnews"
+    lang: "en"
+  - name: "CNN"
+    url: "http://rss.cnn.com/rss/edition_world.rss"
+    lang: "en"
+  - name: "Bloomberg"
+    url: "https://feeds.bloomberg.com/markets/news.rss"
+    lang: "en"
+  - name: "Al Jazeera"
+    url: "https://www.aljazeera.com/xml/rss/all.xml"
+    lang: "en"
+  - name: "AFP"
+    url: "https://news.google.com/rss/search?q=when:24h+allinurl:afp.com&hl=en-US&gl=US&ceid=US:en"
+    lang: "en"
+  - name: "WSJ"
+    url: "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+    lang: "en"
+  - name: "AP News"
+    url: "https://www.apnews.com/rss"
+    lang: "en"
+
+# ====== 推送设置 ======
+push_channel: "wechat_sct"
+
+wechat_sct:
+  send_key: ""   # 留空，从环境变量 SCT_KEY 读取
+
+# ====== 其他设置 ======
+settings:
+  max_items_per_source: 4          # 每个源最多取4条
+  enable_full_text: true           # 是否提取正文
+  full_text_max_length: 500        # 正文截取字数
+  send_if_empty: false
